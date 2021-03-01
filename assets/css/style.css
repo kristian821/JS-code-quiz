@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+}
+
+#quiz {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#quiz-title {
+    justify-content: center;
+    align-self: center;
+}
+
+#quiz-body {
+    display: flex;
+    flex-flow: wrap;
+    padding: 10px 20px 10px 20px;
+}
+

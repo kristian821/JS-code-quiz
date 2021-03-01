@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <main class="page-content">
+    <main>
         <div id="highscore">
             <button>
                 View high scores
             </button>
         </div>
-        <section class="quiz">
-            <div class="title"></div>
-            <div class="body"></div>
-        </section>
-        <section class="timer">
-
+        <section class="quiz" id="quiz">
+            <div id="quiz-title"></div>
+            <button class="button" id="start-button">Start Quiz</button>
+           <div id="answers">
+                <div class = "button" id="firstAnswer" onCLick="checkAnswer('firstAnswer')"></div>
+                <div class = "button" id="secondAnswer" onCLick="checkAnswer('secondAnswer')"></div>
+                <div class = "button" id="thirdAnswer" onCLick="checkAnswer('thirdAnswer')"></div>
+                <div class = "button" id="fourthAnswer" onCLick="checkAnswer('fourthAnswer')"></div>
+           </div>
+            <div id="timer"></div>
         </section>
     </main>
-    <script src="/assets/js/logic.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 </html>
